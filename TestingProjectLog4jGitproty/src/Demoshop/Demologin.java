@@ -39,6 +39,7 @@ public class Demologin {
 	  driver.findElement(By.xpath("//*[@id='Email']")).sendKeys(pro.getProperty("email"));
       driver.findElement(By.xpath("//*[@id='Password']")).sendKeys(pro.getProperty("password"));
 	  driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input")).click();
+	  system.out.println("pull project")
 	  
   }
 }
