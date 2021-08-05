@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14368" started-at="2021-08-05T17:19:24Z" finished-at="2021-08-05T17:19:39Z">
+  <suite name="Default suite" duration-ms="12713" started-at="2021-08-05T17:45:16Z" finished-at="2021-08-05T17:45:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14368" started-at="2021-08-05T17:19:24Z" finished-at="2021-08-05T17:19:39Z">
+    <test name="Default test" duration-ms="12713" started-at="2021-08-05T17:45:16Z" finished-at="2021-08-05T17:45:29Z">
       <class name="Demoshop.Demologin">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:Demoshop.Demologin@57fffcd7]" name="beforeSuite" is-config="true" duration-ms="4600" started-at="2021-08-05T22:49:20Z" finished-at="2021-08-05T22:49:24Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:Demoshop.Demologin@57fffcd7]" name="beforeSuite" is-config="true" duration-ms="2961" started-at="2021-08-05T23:15:13Z" finished-at="2021-08-05T23:15:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="demologin()[pri:0, instance:Demoshop.Demologin@57fffcd7]" name="demologin" duration-ms="14336" started-at="2021-08-05T22:49:24Z" finished-at="2021-08-05T22:49:39Z">
+        <test-method status="PASS" signature="demologin()[pri:0, instance:Demoshop.Demologin@57fffcd7]" name="demologin" duration-ms="12682" started-at="2021-08-05T23:15:16Z" finished-at="2021-08-05T23:15:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demologin -->

@@ -9,7 +9,11 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.apache.log4j.Appender;
+import org.apache.log4j.ConsoleAppender;
+import org.apache.log4j.FileAppender;
+import org.apache.log4j.Layout;
 import org.apache.log4j.Logger;
+import org.apache.log4j.PatternLayout;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -36,7 +40,7 @@ public class Demologin {
 
   
   @Test
-  public void demologin() 
+  public void demologin() throws IOException 
   {
   
 	  log.info("open url");
@@ -46,7 +50,21 @@ public class Demologin {
           driver.findElement(By.xpath("//*[@id='Password']")).sendKeys(pro.getProperty("password"));
 	  driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input")).click();
 	  System.out.println("pull project");
+	  
+	  Layout l=new PatternLayout();
+	  
+	//  Appender ap=new ConsoleAppender(l);
+	 // log.addAppender(ap);
 
+	  
+	  
+	  Appender ap1=new FileAppender(l,"lolo.txt");
+	  log.addAppender(ap1);
+	  log.debug("Debug");
+	  log.info("info");
+	  log.warn("warn");
+	  log.error("error");
+	  log.fatal("fatal");
 	   System.out.println("login succefully");
 	  
   }
