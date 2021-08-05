@@ -29,18 +29,26 @@ public class Demologin {
 
 	  System.setProperty("webdriver.chrome.driver", "E:\\driver\\New folder\\New folder\\chromedriver_win32\\chromedriver.exe");
       driver=new ChromeDriver();
-      log.debug("open url");
+      
+	  log.debug("open browser");
+
         }
 
   
   @Test
   public void demologin() 
   {
+  
+	  log.info("open url");
+
 	  driver.get(pro.getProperty("url"));
 	  driver.findElement(By.xpath("//*[@id='Email']")).sendKeys(pro.getProperty("email"));
-      driver.findElement(By.xpath("//*[@id='Password']")).sendKeys(pro.getProperty("password"));
+          driver.findElement(By.xpath("//*[@id='Password']")).sendKeys(pro.getProperty("password"));
 	  driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input")).click();
 	  System.out.println("pull project");
+
+	   System.out.println("login succefully");
+	  
   }
 
 }
